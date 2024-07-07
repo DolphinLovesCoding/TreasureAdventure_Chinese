@@ -38,7 +38,7 @@ info.onScore(5, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
     info.stopCountdown()
-    game.setGameOverMessage(true, "You Win!" + (" Time:" + time + "s"))
+    game.setGameOverMessage(true, "You Win!" + (" Time:" + (time + 2) + "s"))
     game.gameOver(true)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles14, function (sprite, location) {
