@@ -1,0 +1,30 @@
+{
+    "name": "尋寶之旅(更新)",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.12.53",
+        "tag": "v1.12.53",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/68ac01b09ebda8b6baba806d4b60e80553848600",
+        "target": "1.12.53",
+        "pxt": "8.5.63",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "blocksprj"
+}
