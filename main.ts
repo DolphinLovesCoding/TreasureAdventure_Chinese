@@ -38,6 +38,7 @@ info.onScore(5, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.chestClosed, function (sprite, location) {
     info.stopCountdown()
+    game.setGameOverMessage(true, "You Win!" + (" Time:" + time + "s"))
     game.gameOver(true)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles14, function (sprite, location) {
@@ -103,7 +104,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 let bat: Sprite = null
 let treasure: Sprite = null
 let hero: Sprite = null
+let time = 0
 game.splash("躲避蝙蝠、收集星星！", "<按A鍵開始遊玩>")
+time = 0
 info.startCountdown(120)
 info.setLife(3)
 tiles.setCurrentTilemap(tilemap`層級9`)
@@ -173,3 +176,11 @@ for (let index = 0; index < 5; index++) {
     bat.setBounceOnWall(true)
 }
 info.setScore(0)
+forever(function () {
+    if (controller.A.isPressed()) {
+        for (let index = 0; index < 121; index++) {
+            pause(1000)
+            time += 1
+        }
+    }
+})
