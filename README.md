@@ -1,7 +1,7 @@
  
 
 
-> 在 [https://dolphinlovescoding.github.io/treasureadventure_chinese/](https://dolphinlovescoding.github.io/treasureadventure_chinese/) 打開此頁面
+> 在 [[https://dolphinlovescoding.github.io/treasureadventure_chinese/](https://dolphinlovescoding.github.io/TreasureAdventure_Chinese/) 打開此頁面
 
 ## 作為擴充功能使用
 
